@@ -84686,7 +84686,6 @@ const ping = (url, timeout) => {
 
   const start = +new Date()
   return got(url, {
-    timeout: 1000,
     errorCodes,
     retry: {
       limit: Math.ceil(timeout / 1000),
